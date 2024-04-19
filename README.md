@@ -2,7 +2,8 @@
 
 
 ### The following code is used to conduct the automated pull from the Cryptocurrency API:
-`def api_runner():
+```
+def api_runner():
     global df
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest' 
     #Original Sandbox Environment: 'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
@@ -26,4 +27,4 @@
     df2 = pd.json_normalize(data['data'])
     df2['timestamp'] = pd.to_datetime('now')
     df = df.append(df2)
-`
+```
