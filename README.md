@@ -28,15 +28,15 @@ def api_runner():
     df2['timestamp'] = pd.to_datetime('now')
     df = df.append(df2)
 ```
-### Time series of the performance of the top 20 cryptocurrencies
+## Time series of the performance of the top 20 cryptocurrencies
 ![FullSeries](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_FullSeriesChange.png)
 
-### Change in value of a cryptocurrency over time (Bitcoin and Ethereum)
-#### Bitcoin
+## Change in value of a cryptocurrency over time (Bitcoin and Ethereum)
+### Bitcoin
 ![Change1](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_BitcoinChange.png)
 
-#### Ethereum
+### Ethereum
 ![Change2](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_EthereumChange.png)
 
-### Count of Market Pairs for top 7 cryptocurrencies
+## Count of Market Pairs for top 7 cryptocurrencies
 ![MarketPairs](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_MarketPairs.png)
