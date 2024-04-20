@@ -1,7 +1,10 @@
-# Crypto API Automation
+# Cryptocurrency API Automation
 
+The purpose of this project was to showcase the web scraping, and automation capabilities of Python. The value of cryptocurrency is constantly changing by the second, which makes the data associated with it an ideal subject to be analyzed using automated extraction.
 
-### The following code is used to conduct the automated pull from the Cryptocurrency API:
+Data is extracted from the publicly accessible CoinMarketCap API. Data was captured in real-time, once per minute, over the course of 10 minutes. Code may be updated to accommodate any time interval and duration.
+
+### The following code is used to conduct the automated data extraction from the Cryptocurrency API:
 ```
 def api_runner():
     global df
@@ -28,10 +31,14 @@ def api_runner():
     df2['timestamp'] = pd.to_datetime('now')
     df = df.append(df2)
 ```
+- When
+
 ## Time series of the performance of the top 20 cryptocurrencies
+- The data for this visualization uses the average values from all extractions over the duration of the automation. In this case, all 10 instances for each cryptocurrency from the 10-minute data extraction is averaged into one average instance for each cryptocurrency. 
 ![FullSeries](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_FullSeriesChange.png)
 
 ## Change in value of a cryptocurrency over time (Bitcoin and Ethereum)
+- 
 ### Bitcoin
 ![Change1](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_BitcoinChange.png)
 
