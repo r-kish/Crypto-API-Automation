@@ -35,6 +35,7 @@ def api_runner():
 
 ## Time series of the percent-change in value of the top 20 cryptocurrencies based on time
 - The data for this visualization consists of the average values from all extractions over the duration of the automation. In this case, all 10 instances for each cryptocurrency from the 10-minute data extraction are averaged into one average instance for each cryptocurrency. The percent change in value in USD is provided for each cryptocurrency at the following checkpoints: 1 hour, 24 hour, 7 days, 30 days, 60 days, 90 days.
+  
 ![FullSeries](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_FullSeriesChange.png)
 
 ## Change in value in USD of a cryptocurrency over time (Bitcoin and Ethereum)
@@ -48,4 +49,5 @@ def api_runner():
 
 ## Count of Market Pairs for top 7 cryptocurrencies
 - Market Pairs refer to a cryptocurrency that can be exchanged for another. The more market pairs available, the more versatile the cryptocurrency.
+
 ![MarketPairs](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_MarketPairs.png)
