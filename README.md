@@ -40,6 +40,7 @@ def api_runner():
 
 ## Change in value in USD of a cryptocurrency over time (Bitcoin and Ethereum)
 - The data for these next two visualizations consists of the value in USD for the selected cryptocurrency at each extraction over the duration of the automation's run. In this case, there are 10 different values for each of the 10 extractions conducted in this automation. Notice how much each cryptocurrency fluctuates in just a matter of minutes.
+- Because of the nature of the automation, both graphs are made from data captured at the exact same time.
   
 ### Bitcoin
 ![Change1](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_BitcoinChange.png)
