@@ -2,7 +2,7 @@
 
 The purpose of this project was to showcase the web scraping, and automation capabilities of Python. The value of cryptocurrency is constantly changing by the second, which makes the data associated with it an ideal subject to be analyzed using automated extraction.
 
-Data is extracted from the publicly accessible CoinMarketCap API. Data was captured in real-time, once per minute, over the course of 10 minutes. Code may be updated to accommodate any time interval and duration.
+Data is extracted from the publicly accessible [CoinMarketCap API](https://coinmarketcap.com). Data was captured in real-time, once per minute, over the course of 10 minutes. Code may be updated to accommodate any time interval and duration.
 
 ### The following code is used to conduct the automated data extraction from the Cryptocurrency API:
 ```
