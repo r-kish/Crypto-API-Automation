@@ -31,14 +31,15 @@ def api_runner():
     df2['timestamp'] = pd.to_datetime('now')
     df = df.append(df2)
 ```
-- When
+- When run, the CoinMarketCap API is accessed, and data is continuously loaded into a dataframe with each extraction. A for loop is used for determining the duration and frequency of the automatic extraction, and is required for conducting a time series analysis.
 
-## Time series of the performance of the top 20 cryptocurrencies
-- The data for this visualization uses the average values from all extractions over the duration of the automation. In this case, all 10 instances for each cryptocurrency from the 10-minute data extraction is averaged into one average instance for each cryptocurrency. 
+## Time series of the percent-change in value of the top 20 cryptocurrencies based on time
+- The data for this visualization consists of the average values from all extractions over the duration of the automation. In this case, all 10 instances for each cryptocurrency from the 10-minute data extraction are averaged into one average instance for each cryptocurrency. The percent change in value in USD is provided for each cryptocurrency at the following checkpoints: 1 hour, 24 hour, 7 days, 30 days, 60 days, 90 days.
 ![FullSeries](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_FullSeriesChange.png)
 
-## Change in value of a cryptocurrency over time (Bitcoin and Ethereum)
-- 
+## Change in value in USD of a cryptocurrency over time (Bitcoin and Ethereum)
+- The data for these next two visualizations consists of the value in USD for the selected cryptocurrency at each extraction over the duration of the automation's run. In this case, there are 10 different values for each of the 10 extractions conducted in this automation. Notice how much each cryptocurrency fluctuates in just a matter of minutes.
+  
 ### Bitcoin
 ![Change1](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_BitcoinChange.png)
 
@@ -46,4 +47,5 @@ def api_runner():
 ![Change2](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_EthereumChange.png)
 
 ## Count of Market Pairs for top 7 cryptocurrencies
+- Market Pairs refer to a cryptocurrency that can be exchanged for another. The more market pairs available, the more versatile the cryptocurrency.
 ![MarketPairs](https://github.com/r-kish/Crypto-API-Automation/blob/main/images/Crypto_MarketPairs.png)
