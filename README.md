@@ -1,4 +1,4 @@
-# Cryptocurrency API Automation
+# Cryptocurrency API ETL Automation using Python
 
 The purpose of this project was to showcase the web scraping, and automation capabilities of Python. The value of cryptocurrency is constantly changing by the second, which makes the data associated with it an ideal subject to be analyzed using automated extraction.
 
